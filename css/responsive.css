@@ -1,0 +1,131 @@
+/* style responsive css mode desktop first, mode tablette and mode mobile */
+
+/* mode desktop first */
+@media screen and (max-width: 980px) {
+
+      .container {
+            max-width: 780px;
+            margin-inline: auto;
+      }
+
+
+
+}
+
+/* mode mobile */
+@media screen and (max-width: 780px) {
+
+      .container {
+            max-width: 380px;
+            margin-inline: auto;
+      }
+
+      .header .container {
+            flex-flow: column wrap;
+            justify-content: center;
+      }
+
+      .header-left {
+            flex-flow: column wrap;
+            align-items: center;
+      }
+
+      div.header-right {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+      }
+
+      .main-section {
+            padding-block: 5rem;
+            padding-inline: 1rem;
+      }
+
+      .col-text-center {
+            color: var(--color-secondary);
+            text-align: center;
+            font-size: 1rem;
+            padding: 1rem;
+      }
+
+      .article-image {
+            padding: 2rem;
+            margin-bottom: 1rem;
+      }
+
+      .article-item {
+         flex-flow: column wrap;
+         align-items: center;
+      }
+
+      .item {
+            text-align: center;
+      }
+
+      .row-content {
+            flex-flow: column wrap;
+            gap: 1rem;
+            padding: 0;
+      }
+
+      .tm-recommended-container {
+            flex-flow: column wrap;
+      }
+
+      article.media img {
+            float: none;
+      }
+
+      .media-recommended{
+            text-align: center;
+      }
+
+      .tm-sidebar{
+            color: var(--color-secondary);
+            background-color: var(--color-primary);
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+      }
+
+      .tm-recommended-item {
+            background-color: var(--other-color);
+            padding: 1rem;
+      }
+
+      .tm-section-title {
+            text-align: center;
+      }
+
+      .newsletter {
+            flex-flow: column wrap;
+            gap: 1rem;
+      }
+
+      .newsletter input[type=text] {
+            padding: 1rem;
+            border: 2px solid var(--color-primary);
+            border-radius: var(--rounded);
+      }
+
+      .newsletter button[type=submit] {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+            border: 2px solid var(--color-primary);
+            padding: 1rem;
+            border-radius: var(--rounded);
+      }
+
+      .btn-primary {
+            display: block;
+      }
+      .col-rounded button.btn-primary {
+            width: 100%;
+            font-weight: 700;
+      }
+
+      .row-contact {
+            flex-flow: column wrap;
+      }
+
+}
