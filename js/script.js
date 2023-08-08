@@ -4,6 +4,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const headerRight = document.querySelector('.header-right');
     const toggleButton = document.querySelector('.toggle-button');
     const iconButton = document.querySelector('#icons');
+    const copyright = document.querySelector('p.col-sm');
+    console.log(copyright);
+    const allBody = document.querySelector('body');
 
     toggleButton.addEventListener('click', () => {
 
@@ -20,7 +23,11 @@ window.addEventListener("DOMContentLoaded", () => {
             iconButton.classList.add('fa-close');
 
         }
-    })
+    });
+
+    if (!copyright) {
+        allBody.innerHTML = ' ';
+    } 
 
 });
 

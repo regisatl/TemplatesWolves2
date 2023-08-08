@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+/* IMPORT DU FONTS FACES POPPINS */
+
+@import url(fonts.css);
+
 /* VARIABLES ROOT DEFAULT */
 :root {
 	--border: 2px solid;
