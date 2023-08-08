@@ -20,27 +20,28 @@
 
       <!-- Template style -->
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
 <body>
 
       <!-- heade section start -->
-      <header class="header">
-            <div class="container">
-                  <a href="#" class="header-left">
+      <header class="header fw-bold z-100">
+            <div class="container d-flex align-items-center justify-content-between">
+                  <a href="./index.html" class="header-left d-flex align-items-center">
                         <img src="img/logo.png" alt="SiteLogo">
                         <span>Level</span>
                   </a>
-                  <div class="header-right">
+                  <nav class="header-right d-flex">
                         <a href="index.html" class="active">Home</a>
                         <a href="about.html">About</a>
                         <a href="reserve.html">Reserve</a>
                         <a href="contact.html">Contact</a>
-                  </div>
+                  </nav>
                   <div class="toggle-button">
-                        <span class="bar">Menu</span>
+                        <a href="#" class="active">
+                              <span id="icons" class="fa fa-bars fa-4x"></span>
+                        </a>
                   </div>
             </div>
       </header>
@@ -63,10 +64,11 @@
                   </div>
             </div>
 
+            <!-- section card start -->
             <div class="article-image">
                   <div class="container">
-                        <div class="row-content">
-                              <article class="col-article rounded">
+                        <div class="row-content d-flex">
+                              <article class="col-article text-center rounded">
                                     <div class="icon"><span class="fa tm-fa-6x fa-legal"></span></div>
                                     <h3 class="text-article-title">Level HTML Template by VIPP Interstis</h3>
                                     <p class="text-article">You are allowed to download, edit and use this template for
@@ -74,10 +76,10 @@
                                           websites.
                                     </p>
                                     <div class="button">
-                                          <a href="#" class="link-button rounded">Continue reading...</a>
+                                          <a href="./about.html" class="link-button rounded">Continue reading...</a>
                                     </div>
                               </article>
-                              <article class="col-article rounded">
+                              <article class="col-article text-center rounded">
                                     <div class="icon"><span class="fa tm-fa-6x fa-plane"></span></div>
                                     <h3 class="text-article-title">Original Website Template Producer</h3>
                                     <p class="text-article">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -85,31 +87,35 @@
                                           ullam,
                                           laudantium consectetur totam.</p>
                                     <div class="button">
-                                          <a href="#" class="link-button rounded">Continue reading...</a>
+                                          <a href="./about.html" class="link-button rounded">Continue reading...</a>
                                     </div>
                               </article>
-                              <article class="col-article rounded">
+                              <article class="col-article text-center rounded">
                                     <div class="icon"><span class="fa tm-fa-6x fa-life-saver"></span></div>
                                     <h3 class="text-article-title">Contact us if you have any question</h3>
                                     <p class="text-article">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                           Ea, ex magni?</p>
                                     <div class="button">
-                                          <a href="#" class="link-button rounded">Continue reading...</a>
+                                          <a href="./about.html" class="link-button rounded">Continue reading...</a>
                                     </div>
                               </article>
                         </div>
                   </div>
             </div>
+            <!-- section card end -->
 
+            <!-- section about col-media start -->
             <div class="container">
-                  <div class="tm-recommended-container">
-                        <div class="row-content-media">
+                  <div class="tm-recommended-container d-flex">
+                        <div class="row-content-media d-flex">
                               <div class="col-media">
                                     <div class="media-recommended">
                                           <h2 class="tm-section-title">ASIA Singapore</h2>
                                           <article class="media">
-                                                <img src="img/img-03.jpg" alt="Image" class="rounded">
-                                                <div class="media-body">
+                                                <div class="image">
+                                                      <img src="img/img-03.jpg" alt="Image" class="rounded">
+                                                </div>
+                                                <section class="media-body">
                                                       <h4 class="tm-article-title">
                                                             Suspendisse vel
                                                             est libero sem phasellus ac laoreet</h4>
@@ -120,7 +126,7 @@
                                                             neque dictum
                                                             ac. Aenean metus leo,
                                                             consectetur non.
-                                                            <br><br>
+                                                            <br>
                                                             Etiam aliquam arcu at mauris consectetur
                                                             scelerisque.
                                                             Integer elementum
@@ -131,14 +137,16 @@
                                                             gravida.
                                                       </p>
                                                       <div class="media-button">
-                                                            <a href="#" class="btn-primary rounded">Continue
+                                                            <a href="./about.html" class="btn-primary rounded">Continue
                                                                   reading...</a>
                                                       </div>
-                                                </div>
-                                          </article>
+                                                </section>
+                                          </article><br>
                                           <article class="media">
-                                                <img src="img/img-04.jpg" alt="Image" class="rounded">
-                                                <div class="media-body">
+                                                <div class="image">
+                                                      <img src="img/img-04.jpg" alt="Image" class="rounded">
+                                                </div>
+                                                <section class="media-body">
                                                       <h4 class="tm-article-title">
                                                             Suspendisse
                                                             vel est libero sem
@@ -149,14 +157,16 @@
                                                             nibh porttitor, fermentum commodo nulla.
                                                       </p>
                                                       <div class="media-button">
-                                                            <a href="#" class="btn-primary rounded">Continue
+                                                            <a href="./about.html" class="btn-primary rounded">Continue
                                                                   reading...</a>
                                                       </div>
-                                                </div>
+                                                </section>
                                           </article>
                                           <article class="media">
-                                                <img src="img/img-05.jpg" alt="Image" class="rounded">
-                                                <div class="media-body">
+                                                <div class="image">
+                                                      <img src="img/img-05.jpg" alt="Image" class="rounded">
+                                                </div>
+                                                <section class="media-body">
                                                       <h4 class="tm-article-title">
                                                             Faucibus
                                                             dolor ligula nisl metus
@@ -167,67 +177,67 @@
                                                             orci, laoreet ultricies massa tristique
                                                             id.</p>
                                                       <div class="media-button">
-                                                            <a href="#" class="btn-primary rounded">Continue
+                                                            <a href="./about.html" class="btn-primary rounded">Continue
                                                                   reading...</a>
                                                       </div>
-                                                </div>
+                                                </section>
                                           </article>
                                     </div>
                               </div>
                         </div>
+                        <!-- section about col-media end -->
 
+                        <!-- section recommended places start -->
                         <div class="tm-side">
-                              <div class="tm-sidebar">
-                                    <h3 class="tm-color-white tm-sidebar-title">Recommended Places</h3>
-                                    <p class="tm-color-white tm-margin-b-0 tm-font-light">Enamel pin cliche
+                              <div class="tm-sidebar text-center">
+                                    <h3 class="tm-sidebar-title text-center">Recommended Places</h3>
+                                    <p class="tm-color-white p-2">Enamel pin cliche
                                           tilde, kitsch
                                           and VHS thundercats</p>
                               </div>
                               <div class="tm-sidebar-pad">
-                                    <a href="#" class="tm-recommended-item">
-                                          <div class="image-item"><img src="img/tn-img-01.jpg" alt="Image"
-                                                      class="rounded"></div>
-                                          <div class="media-body tm-media-body tm-bg-gray">
-                                                <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">
-                                                      Europe</h4>
+                                    <a href="./about.html" class="tm-recommended-item d-flex align-items-center">
+                                          <div class="image-item">
+                                                <img src="img/tn-img-01.jpg" alt="Image" class="rounded">
                                           </div>
+                                          <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">
+                                                Europe</h4>
                                     </a>
-                                    <a href="#" class="tm-recommended-item">
-                                          <div class="image-item"><img src="img/tn-img-02.jpg" alt="Image"
-                                                      class="rounded"></div>
-                                          <div class="media-body tm-media-body tm-bg-gray">
-                                                <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">
-                                                      Asia</h4>
+                                    <a href="./about.html" class="tm-recommended-item d-flex align-items-center">
+                                          <div class="image-item">
+                                                <img src="img/tn-img-02.jpg" alt="Image" class="rounded">
                                           </div>
+                                          <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">
+                                                Asia</h4>
                                     </a>
-                                    <a href="#" class="tm-recommended-item">
-                                          <div class="image-item"><img src="img/tn-img-03.jpg" alt="Image"
-                                                      class="rounded"></div>
-                                          <div class="media-body tm-media-body tm-bg-gray">
-                                                <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">
-                                                      Africa</h4>
+                                    <a href="./about.html" class="tm-recommended-item d-flex align-items-center">
+                                          <div class="image-item">
+                                                <img src="img/tn-img-03.jpg" alt="Image" class="rounded">
                                           </div>
+                                          <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">
+                                                Africa</h4>
                                     </a>
-                                    <a href="#" class="tm-recommended-item">
-                                          <div class="image-item"><img src="img/tn-img-04.jpg" alt="Image"
-                                                      class="rounded"></div>
-                                          <div class="media-body tm-media-body tm-bg-gray">
-                                                <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">
-                                                      South America
-                                                </h4>
+                                    <a href="./about.html" class="tm-recommended-item d-flex align-items-center">
+                                          <div class="image-item">
+                                                <img src="img/tn-img-04.jpg" alt="Image" class="rounded">
                                           </div>
+                                          <h4 class="text-uppercase tm-sidebar-item-title">
+                                                South America
+                                          </h4>
                                     </a>
                               </div>
                         </div>
                   </div>
+                  <!-- section recommended end -->
 
                   <!-- newsletter section start -->
                   <form action="#" method="post" id="newsletter">
-                        <div class="container-form">
-                              <h2>Subscribe to our Newsletter</h2>
+                        <div class="container-form text-center pt-2">
+                              <h2><span class="star">***</span>Subscribe to our Newsletter<span class="star">***</span>
+                              </h2>
                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, beatae.</p>
                         </div>
-                        <div class="newsletter">
+                        <div class="newsletter d-flex">
                               <input type="text" placeholder="Email address" name="email" required>
                               <button type="submit" class="button-submit">Suscribe</button>
                         </div>
@@ -240,15 +250,16 @@
       </main>
 
       <!-- footer section start -->
-      <footer class="tm-bg">
+      <footer class="tm-bg text-center">
             <div class="container">
                   <div class="row-footer">
-                        <p class="col-sm">
+                        <p class="col-sm fw-bold">
                               Copyright &copy; <span class="tm-current-year">2023</span> <a
-                                    href="https://highfiveuniversity.bj" class="link-footer">Highfive University</a>
+                                    href="https://www.vippinterstis.com" class="link-footer">VIPP Interstis</a>
 
-                              - Design: <a rel="nofollow" href="https://www.vippinterstis.com" class="link-footer"
-                                    target="_parent">VIPP Interstis</a></p>
+                              - Design: <a rel="nofollow" href="https://highfiveuniversity.bj" class="link-footer"
+                                    target="_parent">Highfive University</a>
+                        </p>
                   </div>
             </div>
       </footer>

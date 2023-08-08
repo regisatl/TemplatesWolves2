@@ -1,18 +1,27 @@
 // script.js
 window.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector(".header");
-    const headerRight = document.querySelector(".header-right");
-    const toggleButton = document.createElement("div");
-    toggleButton.classList.add("toggle-button");
-    header.appendChild(toggleButton);
 
-    toggleButton.addEventListener("click", () => {
-        headerRight.classList.toggle("active");
-    });
+    const headerRight = document.querySelector('.header-right');
+    const toggleButton = document.querySelector('.toggle-button');
+    const iconButton = document.querySelector('#icons');
 
-    window.addEventListener("resize", () => {
-        if (window.innerWidth > 780) {
-            headerRight.classList.remove("active");
+    toggleButton.addEventListener('click', () => {
+
+        if (headerRight.style.display === "block") {
+
+            headerRight.style.display = "none";
+            iconButton.classList.add('fa-bars');
+            iconButton.classList.remove('fa-close');
+
+        } else {
+
+            headerRight.style.display = "block";
+            iconButton.classList.remove('fa-bars');
+            iconButton.classList.add('fa-close');
+
         }
-    });
+    })
+
 });
+
+

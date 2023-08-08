@@ -20,33 +20,41 @@
 
       <!-- Template style -->
       <link rel="stylesheet" href="./css/style.css">
-      <link rel="stylesheet" href="./css/responsive.css">
 
 </head>
 
 <body>
 
-      <div class="header">
-            <div class="container">
-                  <a href="index.html" class="header-left">
+      <!-- header section start -->
+      <header class="header fw-bold z-100">
+            <div class="container d-flex align-items-center justify-content-between">
+                  <a href="index.html" class="header-left d-flex align-items-center">
                         <img src="img/logo.png" alt="SiteLogo">
                         <span>Level</span>
                   </a>
-                  <div class="header-right">
+                  <nav class="header-right">
                         <a href="index.html">Home</a>
                         <a href="about.html" class="active">About</a>
                         <a href="reserve.html">Reserve</a>
                         <a href="contact.html">Contact</a>
+                  </nav>
+                  <div class="toggle-button">
+                        <a href="#" class="active">
+                              <span id="icons" class="fa fa-bars fa-4x"></span>
+                        </a>
                   </div>
             </div>
-      </div>
-      
-      <div class="about-media">
+      </header>
+      <!-- header section end -->
+
+      <div class="about-media text-center">
             <h2>About our company Level</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, beatae.</p>
       </div>
+
+      <!-- section video bg start -->
       <div class="container">
-            <div class="tm-bg-video">
+            <div class="tm-bg-video text-center">
                   <video controls="" loop="" class="tmVideo">
                         <source src="videos/video.mp4" type="video/mp4">
                         <source src="videos/video.ogg" type="video/ogg">
@@ -54,12 +62,15 @@
                   </video>
             </div>
       </div>
+      <!-- secttion video bg end -->
 
+      <!-- section about start -->
       <div class="container">
             <div class="row">
                   <div class="col-about">
-                        <div class="article-item">
-                              <article class="item">
+                        <h2 class="text-center"><span class="star">***</span>Our services<span class="star">***</span></h2>
+                        <div class="article-item d-flex">
+                              <article class="item text-center">
                                     <img src="img/img-01.jpg" alt="Image" class="rounded">
                                     <div class="tm-article-pad">
                                           <header>
@@ -72,11 +83,11 @@
                                                 sollicitudin at augue venenatis eleifend. Nulla ligula
                                                 ligula, egestas sit amet
                                                 viverra id, iaculis sit amet ligula.</p>
-                                          <div class="button-media"><a href="#" class="btn-primary rounded">View
-                                                      More.</a></div>
+                                          <div class="button-media"><a href="./reserve.html"
+                                                      class="btn-primary rounded">Get more info...</a></div>
                                     </div>
                               </article>
-                              <article class="item">
+                              <article class="item text-center">
                                     <img src="img/img-02.jpg" alt="Image" class="rounded">
                                     <div class="tm-article-pad">
                                           <header>
@@ -89,11 +100,11 @@
                                                 viverra blandit massa in varius. Sed nec ex eu ex tincidunt
                                                 iaculis. Curabitur
                                                 eget turpis gravida.</p>
-                                          <div class="button-media"><a href="#" class="btn-primary rounded">View
-                                                      More</a></div>
+                                          <div class="button-media"><a href="./reserve.html"
+                                                      class="btn-primary rounded">Get more info...</a></div>
                                     </div>
                               </article>
-                              <article class="item">
+                              <article class="item text-center">
                                     <img src="img/img-01.jpg" alt="Image" class="rounded">
                                     <div class="tm-article-pad">
                                           <header>
@@ -106,13 +117,13 @@
                                                 sapien venenatis consequat. Aliquam ac lacus volutpat,
                                                 dictum risus at,
                                                 scelerisque nulla.</p>
-                                          <div class="button-media"><a href="#" class="btn-primary rounded">View
-                                                      More</a></div>
+                                          <div class="button-media"><a href="./reserve.html"
+                                                      class="btn-primary rounded">Get more info...</a></div>
                                     </div>
                               </article>
                         </div>
-                        <div class="article-item">
-                              <article class="item">
+                        <div class="article-item d-flex">
+                              <article class="item text-center">
                                     <img src="img/img-02.jpg" alt="Image" class="rounded">
                                     <div class="tm-article-pad">
                                           <header>
@@ -125,11 +136,11 @@
                                                 ultrices. Praesent tortor ante, fringilla ac nibh porttitor,
                                                 fermentum commodo
                                                 nulla.</p>
-                                          <div class="button-media"><a href="#" class="btn-primary rounded">View
-                                                      More</a></div>
+                                          <div class="button-media"><a href="./reserve.html"
+                                                      class="btn-primary rounded">Get more info...</a></div>
                                     </div>
                               </article>
-                              <article class="item">
+                              <article class="item text-center">
                                     <img src="img/img-01.jpg" alt="Image" class="rounded">
                                     <div class="tm-article-pad">
                                           <header>
@@ -142,11 +153,11 @@
                                                 viverra blandit massa in varius. Sed nec ex eu ex tincidunt
                                                 iaculis. Curabitur
                                                 eget turpis gravida.</p>
-                                          <div class="button-media"><a href="#" class="btn-primary rounded">View
-                                                      More</a></div>
+                                          <div class="button-media"><a href="./reserve.html"
+                                                      class="btn-primary rounded">Get more info...</a></div>
                                     </div>
                               </article>
-                              <article class="item">
+                              <article class="item text-center">
                                     <img src="img/img-02.jpg" alt="Image" class="rounded">
                                     <div class="tm-article-pad">
                                           <header>
@@ -159,27 +170,46 @@
                                                 sapien venenatis consequat. Aliquam ac lacus volutpat,
                                                 dictum risus at,
                                                 scelerisque nulla.</p>
-                                          <div class="button-media"><a href="#" class="btn-primary rounded">View
-                                                      More</a></div>
+                                          <div class="button-media"><a href="./reserve.html"
+                                                      class="btn-primary rounded">Get more info...</a></div>
                                     </div>
                               </article>
                         </div>
                   </div>
             </div>
       </div>
+      <!-- section about end -->
 
-      <footer class="tm-bg">
+      <!-- newsletter section start -->
+      <div class="container">
+            <form action="#" method="post" id="newsletter">
+                  <div class="container-form text-center">
+                        <h2><span class="star">***</span>Subscribe to our Newsletter<span class="star">***</span></h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, beatae.</p>
+                  </div>
+                  <div class="newsletter d-flex">
+                        <input type="text" placeholder="Email address" name="email" required>
+                        <button type="submit" class="button-submit">Suscribe</button>
+                  </div>
+            </form>
+      </div>
+      <!-- newsletter section end -->
+
+      <!-- footer section start -->
+      <footer class="tm-bg text-center">
             <div class="container">
                   <div class="row-footer">
-                        <p class="col-sm">
+                        <p class="col-sm fw-bold">
                               Copyright &copy; <span class="tm-current-year">2023</span> <a
-                                    href="https://highfiveuniversity.bj" class="link-footer">Highfive University</a>
+                                    href="https://www.vippinterstis.com" class="link-footer">VIPP Interstis</a>
 
-                              - Design: <a rel="nofollow" href="https://www.vippinterstis.com" class="link-footer"
-                                    target="_parent">VIPP Interstis</a></p>
+                              - Design: <a rel="nofollow" href="https://highfiveuniversity.bj" class="link-footer"
+                                    target="_parent">Highfive University</a>
+                        </p>
                   </div>
             </div>
       </footer>
+      <!-- footer section end -->
 
       <script src="./js/script.js"></script>
 
