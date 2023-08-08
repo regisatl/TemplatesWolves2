@@ -4,9 +4,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const headerRight = document.querySelector('.header-right');
     const toggleButton = document.querySelector('.toggle-button');
     const iconButton = document.querySelector('#icons');
-    const copyright = document.querySelector('p.col-sm');
-    console.log(copyright);
-    const allBody = document.querySelector('body');
 
     toggleButton.addEventListener('click', () => {
 
@@ -25,9 +22,19 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    if (!copyright) {
-        allBody.innerHTML = ' ';
-    } 
+    // Récupérer l'élément contenant l'année de copyright
+    const copyrightYearElement = document.querySelector('.tm-current-year');
+
+    // Récupérer l'année actuelle
+    const currentYear = new Date().getFullYear();
+
+    // Vérifier si le copyright a été modifié
+    if (copyrightYearElement.textContent.trim() !== currentYear.toString()) {
+        console.warn("Le copyright a été modifié. Attention à la violation des droits d'auteur.");
+
+        // Optionnel : Rendre la page illisible en ajoutant une classe CSS pour masquer le contenu
+        document.body.classList.add('page-illegible');
+    }
 
 });
 
