@@ -18,11 +18,11 @@
       <script src="https://kit.fontawesome.com/79fa04224e.js" crossorigin="anonymous"></script>
 
           <!-- link main style -->
-          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/style.css" type="text/css">
           <!-- linl font face Poppins -->
-          <link rel="stylesheet" href="css/fonts.css">
+          <link rel="stylesheet" href="css/fonts.css" type="text/css">
           <!-- link font awesome in offline -->
-          <link rel="stylesheet" href="css/font-awesome.min.css">
+          <link rel="stylesheet" href="./font-awesome/css/all.css" type="text/css">
 
 </head>
 
@@ -35,11 +35,11 @@
                         <img src="img/logo.png" alt="SiteLogo">
                         <span>Level</span>
                   </a>
-                  <nav class="header-right">
-                        <a href="index.html">Home</a>
-                        <a href="about.html" class="active">About</a>
-                        <a href="reserve.html">Reserve</a>
-                        <a href="contact.html">Contact</a>
+                  <nav class="header-right d-flex">
+                        <a href="index.html" class="text-center"><span class="fa fa-home"></span> Home</a>
+                        <a href="about.html" class="active text-center"><span class="fa fa-gear"></span> About</a>
+                        <a href="reserve.html" class="text-center"><span class="fa fa-share-square"></span> Reserve</a>
+                        <a href="contact.html" class="text-center"><span class="fa fa-envelope"></span> Contact</a>
                   </nav>
                   <div class="toggle-button">
                         <a href="#" class="active">
@@ -199,13 +199,14 @@
       <!-- newsletter section end -->
 
       <!-- footer section start -->
+      <hr class="container">
       <footer class="tm-bg text-center">
             <div class="container">
                   <div class="row-footer">
                         <p class="col-sm fw-bold">
-                              Copyright &copy; <span class="tm-current-year">2023</span>
+                              Copyright &copy; <span id="displayYear" class="date"></span>
                               - Design create by: <a rel="nofollow" href="https://highfiveuniversity.bj" class="link-footer"
-                                    target="_parent">Highfive University</a>
+                                    target="_parent" id="copyright"></a>
                         </p>
                   </div>
             </div>
@@ -213,6 +214,7 @@
       <!-- footer section end -->
 
       <script src="./js/script.js"></script>
+      <script src="./font-awesome/js/all.js"></script>
 
 </body>
 

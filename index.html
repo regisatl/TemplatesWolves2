@@ -9,20 +9,21 @@
       <title>Level</title>
 
       <!-- Google web font "Poppins" -->
-      <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">     
+      <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+            rel="stylesheet">
 
       <!-- link favicon -->
       <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
       <!-- Font Awesome -->
-      <!-- <script src="https://kit.fontawesome.com/79fa04224e.js" crossorigin="anonymous"></script> -->
+      <script src="https://kit.fontawesome.com/79fa04224e.js" crossorigin="anonymous"></script>
 
       <!-- link main style -->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
       <!-- linl font face Poppins -->
-      <link rel="stylesheet" href="css/fonts.css">
+      <link rel="stylesheet" href="css/fonts.css" type="text/css">
       <!-- link font awesome in offline -->
-      <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
+      <link rel="stylesheet" href="./font-awesome/css/font-awesome.css" type="text/css">
 
 </head>
 
@@ -36,10 +37,10 @@
                         <span>Level</span>
                   </a>
                   <nav class="header-right d-flex">
-                        <a href="index.html" class="active">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="reserve.html">Reserve</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="index.html" class="active text-center"><span class="fa fa-home"></span> Home</a>
+                        <a href="about.html" class="text-center"><span class="fa fa-gear"></span> About</a>
+                        <a href="reserve.html" class="text-center"><span class="fa fa-share-square"></span> Reserve</a>
+                        <a href="contact.html" class="text-center"><span class="fa fa-envelope"></span> Contact</a>
                   </nav>
                   <div class="toggle-button">
                         <a href="#" class="active">
@@ -62,7 +63,9 @@
                                     voluptatem reiciendis ut nemo fugit fugiat mollitia culpa natus.</p>
 
                               <p class="color-white section-subtitle">Subscribe to get our newsletters</p>
-                              <a href="#newsletter" class="button-link rounded">Subscribe Newletters</a>
+                              <a href="#newsletter" class="startButton button-link rounded"> Subscribe newsletter
+                                    <span class="fa fa-arrow-circle-down"></span>
+                              </a>
                         </div>
                   </div>
             </div>
@@ -72,7 +75,7 @@
                   <div class="container">
                         <div class="row-content d-flex">
                               <article class="col-article text-center rounded">
-                                    <div class="icon"><span class="fa tm-fa-6x fa-legal"></span></div>
+                                    <div class="icon"><span class="fa fa-3x fa-legal"></span></div>
                                     <h3 class="text-article-title">Level HTML Template by VIPP Interstis</h3>
                                     <p class="text-article">You are allowed to download, edit and use this template for
                                           your business or client
@@ -83,7 +86,7 @@
                                     </div>
                               </article>
                               <article class="col-article text-center rounded">
-                                    <div class="icon"><span class="fa tm-fa-6x fa-plane"></span></div>
+                                    <div class="icon"><span class="fa fa-3x fa-plane"></span></div>
                                     <h3 class="text-article-title">Original Website Template Producer</h3>
                                     <p class="text-article">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                           Consequatur quis assumenda
@@ -94,7 +97,7 @@
                                     </div>
                               </article>
                               <article class="col-article text-center rounded">
-                                    <div class="icon"><span class="fa tm-fa-6x fa-life-saver"></span></div>
+                                    <div class="icon"><span class="fa fa-3x fa-question-circle"></span></div>
                                     <h3 class="text-article-title">Contact us if you have any question</h3>
                                     <p class="text-article">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                           Ea, ex magni?</p>
@@ -255,11 +258,11 @@
       <!-- footer section start -->
       <footer class="tm-bg text-center">
             <div class="container">
-                  <div class="row-footer">
+                  <div class="row-footer" id="footer">
                         <p class="col-sm fw-bold">
-                              Copyright &copy; <span class="tm-current-year">2023</span>
-                              - Design create by: <a rel="nofollow" href="https://highfiveuniversity.bj" class="link-footer"
-                                    target="_parent">Highfive University</a>
+                              Copyright &copy; <span id="displayYear" class="date"></span>
+                              - Design create by: <a rel="nofollow" href="https://highfiveuniversity.bj"
+                                    class="link-footer" target="_parent" id="copyright"></a>
                         </p>
                   </div>
             </div>
@@ -268,6 +271,7 @@
 
       <!-- script js start -->
       <script src="./js/script.js"></script>
+      <script src="./font-awesome/js/all.js"></script>
 
 </body>
 

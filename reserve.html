@@ -15,14 +15,14 @@
       <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
       <!-- Font Awesome -->
-      <!-- <script src="https://kit.fontawesome.com/79fa04224e.js" crossorigin="anonymous"></script> -->
+      <script src="https://kit.fontawesome.com/79fa04224e.js" crossorigin="anonymous"></script>
 
            <!-- link main style -->
-           <link rel="stylesheet" href="css/style.css">
+           <link rel="stylesheet" href="css/style.css" type="text/css">
            <!-- linl font face Poppins -->
-           <link rel="stylesheet" href="css/fonts.css">
+           <link rel="stylesheet" href="css/fonts.css" type="text/css">
            <!-- link font awesome in offline -->
-           <link rel="stylesheet" href="css/font-awesome.min.css">
+           <link rel="stylesheet" href="./font-awesome/css/all.css" type="text/css">
 
 </head>
 
@@ -35,11 +35,11 @@
                         <img src="img/logo.png" alt="SiteLogo">
                         <span>Level</span>
                   </a>
-                  <nav class="header-right">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="reserve.html" class="active">Reserve</a>
-                        <a href="contact.html">Contact</a>
+                  <nav class="header-right d-flex">
+                        <a href="index.html" class="text-center"><span class="fa fa-home"></span> Home</a>
+                        <a href="about.html" class="text-center"><span class="fa fa-gear"></span> About</a>
+                        <a href="reserve.html" class="active text-center"><span class="fa fa-share-square"></span> Reserve</a>
+                        <a href="contact.html" class="text-center"><span class="fa fa-envelope"></span> Contact</a>
                   </nav>
                   <div class="toggle-button">
                         <a href="#" class="active">
@@ -66,19 +66,19 @@
                               <form action="#" method="post" class="tm-search-form">
                                     <div class="form-row d-flex">
                                           <div class="form-group">
-                                                <i class="fa fa-map-marker fa-1x tm-form-element-icon"></i>
+                                                <span class="fa fa-location-dot fa-2x"></span>
                                                 <input name="city" type="text" class="form-control rounded"
                                                       id="inputCity" placeholder="Type your destination..." required>
                                           </div>
 
                                           <div class="form-group">
-                                                <i class="fa fa-calendar fa-1x tm-form-element-icon"></i>
+                                                <span class="fa fa-calendar fa-2x"></span>
                                                 <input name="check-in" type="date" class="form-control rounded"
                                                       id="inputCheckIn" placeholder="Check In" required>
                                           </div>
 
                                           <div class="form-group ">
-                                                <i class="fa fa-calendar fa-1x tm-form-element-icon"></i>
+                                                <span class="fa fa-calendar fa-2x"></span>
                                                 <input name="check-out" type="date" class="form-control rounded"
                                                       id="inputCheckOut" placeholder="Check Out" required>
                                           </div>
@@ -99,7 +99,7 @@
                                                       <option value="9">9</option>
                                                       <option value="10">10</option>
                                                 </select>
-                                                <i class="fa fa-user fa-1x tm-form-element-icon"></i>
+                                                <span class="fa fa-user fa-2x"></span>
                                           </div>
                                           <div class="form-group-select">
                                                 <select name="children" class="form-control rounded" id="children">
@@ -116,8 +116,7 @@
                                                       <option value="9">9</option>
                                                       <option value="10">10</option>
                                                 </select>
-                                                <i
-                                                      class="fa fa-user fa-1x tm-form-element-icon tm-form-element-icon-small"></i>
+                                                <span class="fa fa-child fa-2x"></span>
                                           </div>
                                           <div class="form-group-select">
                                                 <select name="room" class="form-control rounded" id="room">
@@ -133,7 +132,7 @@
                                                       <option value="9">9</option>
                                                       <option value="10">10</option>
                                                 </select>
-                                                <i class="fa fa-1x fa-bed tm-form-element-icon"></i>
+                                                <span class="fa fa-2x fa-bed"></span>
                                           </div>
                                     </div>
                                     <div class="button-reserve d-flex justify-content-between">
@@ -169,13 +168,14 @@
       <!-- newsletter section end -->
 
       <!-- footer section start -->
+      <hr class="container">
       <footer class="tm-bg text-center">
             <div class="container">
                   <div class="row-footer">
                         <p class="col-sm fw-bold">
-                              Copyright &copy; <span class="tm-current-year">2023</span>
+                              Copyright &copy; <span id="displayYear" class="date"></span>
                               - Design create by: <a rel="nofollow" href="https://highfiveuniversity.bj" class="link-footer"
-                                    target="_parent">Highfive University</a>
+                                    target="_parent" id="copyright"></a>
                         </p>
                   </div>
             </div>
@@ -183,6 +183,7 @@
       <!-- footer section end -->
 
       <script src="./js/script.js"></script>
+      <script src="./font-awesome/js/all.js"></script>
 
 </body>
 

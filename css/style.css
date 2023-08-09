@@ -43,10 +43,6 @@ html {
 	justify-content: center;
 }
 
-.transition {
-	transition: var(--transition);
-}
-
 .text-uppercase {
 	text-transform: uppercase;
 }
@@ -58,6 +54,7 @@ html {
 .z-1 {
 	z-index: 1;
 }
+
 .z-100 {
 	z-index: 100;
 }
@@ -65,6 +62,7 @@ html {
 .fs-1 {
 	font-size: 1rem;
 }
+
 .fs-2 {
 	font-size: 1.5rem;
 }
@@ -72,12 +70,18 @@ html {
 .p-1 {
 	padding: 1rem;
 }
+
 .p-2 {
 	padding-inline: 2rem;
 }
 
 .fw-bold {
 	font-weight: 700;
+}
+
+hr {
+	margin-top: 3rem;
+	margin-bottom: 2rem;
 }
 
 /* CSS TO APPLY IN THE BODY */
@@ -155,11 +159,20 @@ body {
 	border-radius: var(--rounded);
 }
 
+.toggle-button a svg {
+	color: var(--color-primary);
+}
+
 
 /* HEADER STYLE CSS END */
 
 .rounded {
 	border-radius: var(--rounded);
+}
+
+.icon svg,
+.date {
+	color: var(--color-primary);
 }
 
 /* MAIN HOME STYLE CSS START */
@@ -227,23 +240,6 @@ div.button {
 	transition: var(--transition);
 }
 
-div.icon {
-	display: flex;
-	justify-content: center;
-}
-
-.col-article span {
-	color: var(--color-secondary);
-	background-color: var(--color-primary);
-	font-size: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-}
-
 .link-button {
 	text-decoration: none;
 	background-color: var(--color-primary);
@@ -251,7 +247,6 @@ div.icon {
 	padding: 1rem 1.5rem;
 	border: 2px solid var(--color-primary);
 	transition: var(--transition);
-	font-weight: bold;
 }
 
 .btn-primary {
@@ -309,6 +304,8 @@ div.media-button,
 
 .tm-side {
 	background-color: var(--other-color);
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
 }
 
 .row-content-media {
@@ -404,6 +401,7 @@ footer.tm-bg {
 }
 
 /* STYLE CSS ABOUT START */
+
 .about-media {
 	background-image: url(../img/bg-img-3.jpg);
 	background-position: center;
@@ -477,25 +475,23 @@ textarea:focus {
 	outline: 1px solid var(--color-primary);
 }
 
-.form-group-select,
-.form-group {
+.form-group,
+.form-group-select {
 	position: relative;
 }
 
-.form-group i {
+.form-group svg {
 	color: var(--color-primary);
 	position: absolute;
+	top: 20%;
 	left: 3%;
-	top: 30%;
-	font-size: 1.3rem;
 }
 
-.form-group-select i {
+.form-group-select svg {
 	color: var(--color-primary);
 	position: absolute;
+	top: 20%;
 	left: 3%;
-	top: 30%;
-	font-size: 1.3rem;
 }
 
 .button-reserve {
@@ -516,6 +512,7 @@ textarea:focus {
 /* STYLE CSS RESERVE AND CONTACT END */
 
 /* STYLE CSS FOOTER HOME, ABOUT, RESERVE AND CONTACT START */
+
 footer.tm-bg {
 	margin-top: 3rem;
 	font-weight: 700;
@@ -540,7 +537,6 @@ footer.tm-contact {
 span.star {
 	color: var(--color-primary);
 }
-
 
 /* STYLE CSS FOOTER HOME, ABOUT, RESERVE AND CONTACT END */
 
@@ -644,16 +640,15 @@ span.star {
 
 }
 
-
-/* mode mobile */
+/* MODE MOBILE*/
 @media screen and (max-width: 768px) {
 
 	.container {
-		max-width: 368px;
+		max-width: 350px;
 		margin-inline: auto;
 	}
 
-	/* responsive css mode mobile header start */
+	/* RESPONSIVE MOBILE MODE CSS START HEADER */
 
 	.header .container {
 		display: flex;
@@ -676,12 +671,13 @@ span.star {
 		display: none;
 		float: right;
 		position: absolute;
-		left: 70%;
+		left: 0%;
 		top: 100%;
 		width: 100%;
 		z-index: 1;
 		background-color: var(--color-secondary);
 		border: var(--rounded);
+		animation: mobileNav 2s normal;
 		transition: all 3s;
 	}
 
@@ -701,10 +697,10 @@ span.star {
 		z-index: 100;
 	}
 
-	/* responsive css mode mobile header end */
+	/* RESPONSIVE CSS MODE MOBILE HEADER END */
 
 
-	/* responsive css mode mobile main start*/
+	/* RESPONSIVE CSS MODE MOBILE MAIN START */
 
 	.main-section {
 		padding-block: 5rem;
@@ -797,10 +793,11 @@ span.star {
 		width: 100%;
 	}
 
-	/* responsive css mode mobile main start*/
+	/* RESPONSIVE CSS MODE MOBILE MAIN START */
 
 
-	/* responsive css mode mobile contact start*/
+	/* RESPONSIVE CSS MODE MOBILE CONTACT START */
+
 	.row-contact {
 		flex-flow: column wrap;
 	}
@@ -820,16 +817,26 @@ span.star {
 		width: 100%;
 	}
 
-	/* responsive css mode mobile contact end*/
+	/* RESPONSIVE CSS MODE MOBILE CONTACT END */
 }
 
 /* ANIMATION FOR THE ALL PAGE WEB */
 
 @keyframes fadeInUp {
 	from {
-	    opacity: 0;
+		opacity: 0;
 	}
+
 	to {
-	    opacity: 1;
+		opacity: 1;
 	}
-  }
+}
+@keyframes mobileNav {
+	from {
+		transform: translateY(-100px);
+	}
+
+	to {
+		transform: translateY(0px);
+	}
+}
