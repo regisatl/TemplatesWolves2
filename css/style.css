@@ -207,11 +207,6 @@ body {
 	margin-top: 15rem;
 }
 
-.startButton {
-	display: inline-block;
-	animation: ScaleInfinite 3s infinite;
-}
-
 .button-link {
 	text-decoration: none;
 	background-color: var(--color-primary);
@@ -544,6 +539,14 @@ span.star {
 		gap: 2rem;
 	}
 
+	.col-contact {
+		flex-basis: 100%;
+	}
+
+	.col-contact .btn-primary  {
+		width: 100%;
+	}
+
 	/* MAIN RESERVE START STYLE CSS RESPONSIVE */
 
 	.button-reserve,
@@ -701,6 +704,7 @@ span.star {
 
 	.row-contact {
 		flex-flow: column wrap;
+		width: 100%;
 	}
 
 	.form-row,
@@ -741,16 +745,4 @@ span.star {
 	to {
 		transform: translateY(0px);
 	}
-}
-
-@keyframes ScaleInfinite {
-
-	0% {
-		transform: translateY(20px);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
-
 }
