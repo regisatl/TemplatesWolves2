@@ -199,11 +199,12 @@ body {
 	color: var(--color-secondary);
 	text-align: center;
 	font-size: 1.5rem;
-	padding: 5rem;
+	padding-block: 10rem;
+	padding-inline: 5rem;
 }
 
 .section-subtitle {
-	margin-bottom: 10rem;
+	margin-top: 15rem;
 }
 
 .startButton {
@@ -687,6 +688,10 @@ span.star {
 
 	.col-rounded button.btn-primary {
 		width: 100%;
+	}
+
+	.col-about h2 {
+		font-size: 1rem;
 	}
 
 	/* RESPONSIVE CSS MODE MOBILE MAIN START */
