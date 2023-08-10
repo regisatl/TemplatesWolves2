@@ -6,7 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <title>Level</title>
+      <title>Voyage</title>
 
       <!-- Google web font "Poppins" -->
       <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
@@ -33,15 +33,15 @@
       <header class="header fw-bold z-100">
             <div class="container d-flex align-items-center justify-content-between">
                   <a href="index.html" class="header-left d-flex align-items-center">
-                        <img src="img/logo.png" alt="SiteLogo">
-                        <span>Level</span>
+                        <span class="fas fa-plane-departure fa-2x icon"></span>
+                        <span>Voyage</span>
                   </a>
                   <nav class="header-right d-flex text-uppercase">
-                        <a href="index.html" class="text-center"><span class="fa fa-home"></span> Home</a>
-                        <a href="about.html" class="text-center"><span class="fa fa-gear"></span> About</a>
+                        <a href="index.html" class="text-center"><span class="fa fa-home"></span> Accueil</a>
+                        <a href="about.html" class="text-center"><span class="fa fa-gear"></span> A propos</a>
                         <a href="reserve.html" class="active text-center"><span class="fa fa-share-square"></span>
-                              Reserve</a>
-                        <a href="contact.html" class="text-center"><span class="fa fa-envelope"></span> Contact</a>
+                              Reservation</a>
+                        <a href="contact.html" class="text-center"><span class="fa fa-envelope"></span> Contacts</a>
                   </nav>
                   <div class="toggle-button">
                         <a href="#" class="active">
@@ -56,13 +56,13 @@
       <div class="tm-section">
 
             <section class="about-media text-center">
-                  <h2>Make your reservation and go everything in the world</h2>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, beatae.</p>
+                  <h2>Faites votre réservation et obtenez plus d'information sur chaque ville</h2>
+                  <p>Remplissez les champs du formulaire et obtenez le meilleure service de voyage.</p>
             </section>
 
             <!-- form section reserve start -->
             <article class="container section-reserve">
-                  <h3 class="text-center"><span class="star">***</span>Your reservation<span class="star">***</span>
+                  <h3 class="text-center"><span class="star">***</span>Votre réservation<span class="star">***</span>
                   </h3>
                   <div class="row">
                         <div class="col-form">
@@ -71,26 +71,26 @@
                                           <div class="form-group">
                                                 <span class="fa fa-location-dot fa-2x icons"></span>
                                                 <input name="city" type="text" class="form-control rounded"
-                                                      id="inputCity" placeholder="Type your destination..." required>
+                                                      id="inputCity" placeholder="Entrez votre destination..." required>
                                           </div>
 
                                           <div class="form-group">
                                                 <span class="fa fa-calendar fa-2x icons"></span>
                                                 <input name="check-in" type="date" class="form-control rounded"
-                                                      id="inputCheckIn" placeholder="Check In" required>
+                                                      id="inputCheckIn" placeholder="Date de départ" required>
                                           </div>
 
                                           <div class="form-group ">
                                                 <span class="fa fa-calendar fa-2x icons"></span>
                                                 <input name="check-out" type="date" class="form-control rounded"
-                                                      id="inputCheckOut" placeholder="Check Out" required>
+                                                      id="inputCheckOut" placeholder="Date de fin" required>
                                           </div>
 
                                     </div>
                                     <div class="form-row-content d-flex">
                                           <div class="form-group-select">
                                                 <select name="adult" class="form-control rounded" id="adult">
-                                                      <option value="">Adult</option>
+                                                      <option value="" disabled>Nombre d'adults</option>
                                                       <option value="1">1</option>
                                                       <option value="2">2</option>
                                                       <option value="3">3</option>
@@ -106,7 +106,7 @@
                                           </div>
                                           <div class="form-group-select">
                                                 <select name="children" class="form-control rounded" id="children">
-                                                      <option value="">Children</option>
+                                                      <option value="" disabled>Nombre Enfants</option>
                                                       <option value="0">0</option>
                                                       <option value="1">1</option>
                                                       <option value="2">2</option>
@@ -123,7 +123,7 @@
                                           </div>
                                           <div class="form-group-select">
                                                 <select name="room" class="form-control rounded" id="room">
-                                                      <option value="">Room</option>
+                                                      <option value="" disabled>Nombre de chambres</option>
                                                       <option value="1">1</option>
                                                       <option value="2">2</option>
                                                       <option value="3">3</option>
@@ -140,11 +140,9 @@
                                     </div>
                                     <div class="button-reserve d-flex justify-content-between">
                                           <div class="form-group-button">
-                                                <button type="submit" class="btn-primary fw-bold rounded">Check
-                                                      Availability</button>
+                                                <button type="submit" class="btn-primary fw-bold rounded">Soumettre</button>
                                           </div>
-                                          <a href="#" class="link-help">Need
-                                                Help?</a>
+                                          <a href="#" class="link-help">Besoin d'aide?</a>
                                     </div>
                         </div>
                         </form>
@@ -154,21 +152,6 @@
       </div>
       </div>
       <!-- form section reserve end -->
-
-      <!-- newsletter section start -->
-      <div class="container">
-            <form method="post" id="newsletter">
-                  <div class="container-form text-center">
-                        <h2><span class="star">***</span>Subscribe to our Newsletter<span class="star">***</span></h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, beatae.</p>
-                  </div>
-                  <div class="newsletter d-flex">
-                        <input type="text" placeholder="Email address" name="email" required>
-                        <button type="submit" class="button-submit">Suscribe</button>
-                  </div>
-            </form>
-      </div>
-      <!-- newsletter section end -->
 
       <!-- footer section start -->
       <hr class="container">

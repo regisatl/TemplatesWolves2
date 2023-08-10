@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const copyrightElement = document.querySelector('#footer');
 
-    copyrightElement.innerHTML = " <p class='col-sm fw-bold'> Copyright &copy; <span class='date'>2023</span> - Design create by: <a rel='nofollow' href='https://highfiveuniversity.bj' class='link-footer' target='_parent' id='copyright'>Highfive University</a></p>";
+    copyrightElement.innerHTML = " <p class='col-sm fw-bold'> Copyright &copy; <span class='date'>2023</span> - design réalisé par: <a rel='nofollow' href='https://highfiveuniversity.bj' class='link-footer' target='_parent' id='copyright'>Highfive University</a></p>";
 
     const allBody = document.querySelector('body');
 
