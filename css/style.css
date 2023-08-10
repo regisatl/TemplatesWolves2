@@ -114,7 +114,6 @@ body {
 	position: sticky;
 	top: 0;
 	height: 100px;
-	vertical-align: middle;
 }
 
 .header-left {
@@ -131,8 +130,7 @@ body {
 }
 
 .header-right {
-	gap: 1rem;
-	text-transform: uppercase;
+	gap: 0.5rem;
 }
 
 .header-right a {
@@ -665,7 +663,7 @@ span.star {
 		top: 20%;
 		left: 2%;
 	}
-	
+
 	.form-group-select svg {
 		color: var(--color-primary);
 		position: absolute;
@@ -893,23 +891,11 @@ span.star {
 @keyframes ScaleInfinite {
 
 	0% {
-		transform: scale(1.1);
-	}
-
-	25% {
-		transform: scale(1.2);
-	}
-
-	50% {
-		transform: scale(1.2);
-	}
-
-	75% {
-		transform: scale(1.1);
+		transform: translateY(20px);
 	}
 
 	100% {
-		transform: scale(1);
+		transform: translateY(0);
 	}
 
 }
