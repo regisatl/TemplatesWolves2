@@ -60,8 +60,6 @@ window.addEventListener("DOMContentLoaded", () => {
         allBody.innerHTML = ' ';
     }
 
-
-
 });
 
 // to get current year
@@ -72,5 +70,6 @@ function getYear() {
 }
 
 getYear();
+
 
 

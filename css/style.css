@@ -75,6 +75,14 @@ html {
 	padding-inline: 2rem;
 }
 
+.gap-1 {
+	gap: 1rem;
+}
+
+.gap-2 {
+	gap: 2rem;
+}
+
 .fw-bold {
 	font-weight: 700;
 }
@@ -102,15 +110,11 @@ body {
 
 .header {
 	background-color: var(--color-secondary);
-	padding-block: 0.5rem;
 	box-shadow: var(--shadow);
 	position: sticky;
 	top: 0;
-}
-
-.header .container {
-	margin-bottom: 1rem;
-	padding-top: 1rem;
+	height: 100px;
+	vertical-align: middle;
 }
 
 .header-left {
@@ -134,7 +138,7 @@ body {
 .header-right a {
 	text-decoration: none;
 	color: var(--color-tertiaire);
-	padding: 1rem 1.5rem;
+	padding: 2rem;
 	transition: var(--transition);
 }
 
@@ -175,6 +179,10 @@ body {
 	color: var(--color-primary);
 }
 
+.col a {
+	color: var(--color-primary);
+}
+
 /* MAIN HOME STYLE CSS START */
 
 .main-section {
@@ -194,6 +202,11 @@ body {
 
 .section-subtitle {
 	margin-bottom: 10rem;
+}
+
+.startButton {
+	display: inline-block;
+	animation: ScaleInfinite 3s infinite;
 }
 
 .button-link {
@@ -545,7 +558,7 @@ span.star {
 
 /* MODE TABLETTE RESPONSIVE */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 992px) {
 
 	.container {
 		max-width: 580px;
@@ -553,6 +566,11 @@ span.star {
 	}
 
 	/* HEADER START STYLE CSS RESPONSIVE */
+
+	.header {
+		padding-top: 1rem;
+		height: 200px;
+	}
 
 	.header .container {
 		display: flex;
@@ -579,6 +597,7 @@ span.star {
 	.header-right a {
 		border: none;
 		margin: 0;
+		padding: 0.9rem 2rem;
 	}
 
 	/* HEADER END STYLE CSS RESPONSIVE */
@@ -623,6 +642,10 @@ span.star {
 		flex-flow: column wrap;
 	}
 
+	.media-recommended {
+		margin-bottom: 4rem;
+	}
+
 
 	/* MAIN RESERVE START STYLE CSS RESPONSIVE */
 
@@ -634,6 +657,20 @@ span.star {
 
 	.form-group-button button.btn-primary {
 		font-weight: 700;
+	}
+
+	.form-group svg {
+		color: var(--color-primary);
+		position: absolute;
+		top: 20%;
+		left: 2%;
+	}
+	
+	.form-group-select svg {
+		color: var(--color-primary);
+		position: absolute;
+		top: 20%;
+		left: 2%;
 	}
 
 	/* MAIN RESERVE END STYLE CSS RESPONSIVE */
@@ -649,6 +686,11 @@ span.star {
 	}
 
 	/* RESPONSIVE MOBILE MODE CSS START HEADER */
+
+	.header {
+		padding-top: 1.5rem;
+		z-index: 100;
+	}
 
 	.header .container {
 		display: flex;
@@ -674,7 +716,8 @@ span.star {
 		left: 0%;
 		top: 100%;
 		width: 100%;
-		z-index: 1;
+		padding-top: 1rem;
+		z-index: 0;
 		background-color: var(--color-secondary);
 		border: var(--rounded);
 		animation: mobileNav 2s normal;
@@ -747,6 +790,11 @@ span.star {
 
 	.media-recommended {
 		text-align: center;
+		gap: 0;
+	}
+
+	.media {
+		margin-bottom: 1rem;
 	}
 
 	.tm-sidebar {
@@ -831,6 +879,7 @@ span.star {
 		opacity: 1;
 	}
 }
+
 @keyframes mobileNav {
 	from {
 		transform: translateY(-100px);
@@ -839,4 +888,28 @@ span.star {
 	to {
 		transform: translateY(0px);
 	}
+}
+
+@keyframes ScaleInfinite {
+
+	0% {
+		transform: scale(1.1);
+	}
+
+	25% {
+		transform: scale(1.2);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	75% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+
 }
